@@ -1,0 +1,20 @@
+.bag-button {
+    background-color: aquamarine;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.wish-button{
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+div{
+      display: flex;
+      gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}

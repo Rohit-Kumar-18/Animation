@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense Knowledge Platform</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>India's Defense Knowledge Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="toggleContent('army')">Indian Army</a></li>
+                <li><a href="javascript:void(0)" onclick="toggleContent('navy')">Indian Navy</a></li>
+                <li><a href="javascript:void(0)" onclick="toggleContent('airforce')">Indian Air Force</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Army Section -->
+        <section id="army" class="hidden">
+            <h2>Indian Army</h2>
+            <div id="army-info"></div>
+        </section>
+
+        <!-- Navy Section -->
+        <section id="navy" class="hidden">
+            <h2>Indian Navy</h2>
+            <div id="navy-info"></div>
+        </section>
+
+        <!-- Air Force Section -->
+        <section id="airforce" class="hidden">
+            <h2>Indian Air Force</h2>
+            <div id="airforce-info"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 India Defense Knowledge Platform</p>
+    </footer>
+
+    <script src="app2.js"></script>
+</body>
+</html>

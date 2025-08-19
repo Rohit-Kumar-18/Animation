@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+</head>
+<body>
+    <h1>BAT BALL AND STUMPS</h1>
+    <button onclick="generateComputerChoice();
+    if (computerChoice==='ball'){
+        score.win++;
+        resultMsg = 'user won';
+    }else if (computerChoice ==='bat'){
+        score.tie++;
+        resultMsg = 'Tie';
+    }else if(computerChoice==='stumps'){
+        score.win++;
+        resultMsg='user won';
+     }
+     alert(`you have chosen bat computer choice is ${computerChoice} and ${resultMsg}`);
+    ">Bat</button>
+
+    <button onclick="generateComputerChoice();
+    if (computerChoice==='ball'){
+        score.tie++
+        resultMsg = 'Tie';
+    }else if (computerChoice ==='bat'){
+        score.lost++;
+        resultMsg = 'computer win';
+    }else if(computerChoice==='stumps') {
+        score.win++;
+        resultMsg='user wins';
+     }
+     alert(`you have chosen ball computer choice is ${computerChoice} and ${resultMsg}`);
+    ">Ball</button>
+
+    <button onclick="generateComputerChoice();
+    if (computerChoice==='ball'){
+        score.lost++;
+        resultMsg = 'Computer wins';
+    }else if (computerChoice ==='bat'){
+        score.lost++;
+        resultMsg = 'computer wins';
+    }else if(computerChoice='stumps'){
+        score.tie++;
+        resultMsg='Tie';
+     }
+     console.log(score);
+     alert(`you have chosen stumps computer choice is ${computerChoice} and ${resultMsg}`);
+    ">Stumps</button>
+    <script src="game2.js"></script>
+</body>
+</html>

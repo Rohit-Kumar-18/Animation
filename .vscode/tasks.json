@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build and run C",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "Hello.c",
+        "-o",
+        "Hello.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Compile C program"
+    }
+  ]
+}
