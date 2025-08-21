@@ -1,3 +1,4 @@
+
 function navAnimation() {
             const nav = document.querySelector("nav");
             const subMenus = document.querySelectorAll(".nav-part2 h5 span");
@@ -83,3 +84,36 @@ function page2Animation() {
         })
 }
 page2Animation()
+
+var sections = document.querySelectorAll(".sec-right")
+sections.forEach(function(elem){
+    elem.addEventListener("mouseenter", function(){
+        elem.childNodes[3].style.opacity = 1
+        elem.childNodes[3].play()
+    })
+    elem.addEventListener("mouseleave", function(){
+        elem.childNodes[3].style.opacity = 1
+        elem.childNodes[3].load()
+    })
+})
+
+// var tl=gsap.timeline()
+// tl.from("#page1",{
+//     opacity:0,
+//     // duration:0.3,
+//     // delay:0.2
+// })
+// tl.from ("#page1",{
+//     transform:"scaleX(0.1) scaleY(0.2)",
+//     borderRadius:"50px",
+//     // duration:2,
+//     ease:"ease-out"
+// })
+// tl.from("#nav",{
+//     opacity:0
+// })
+// tl.from("#page1 h1, #page1 p, #page1 div",{
+//     opacity:0,
+//     duration:0.5,
+//     stagger:0.2
+// })
